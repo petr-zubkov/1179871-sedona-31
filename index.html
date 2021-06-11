@@ -7,81 +7,96 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <title>Седона — небольшой городок в Аризоне,заслуживающий большего!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <header>
-            <nav>
-                <a>
-                    <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Сидона">
-                </a>
-                <img src="https://via.placeholder.com/1200x56" alt="top menu">
-                <ul>
-                    <!-- Основное меню -->
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и видео</a></li>
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a href="catalog.html">Гостиницы</a></li>
-                </ul>
+        <header class="main-header">
+            <a class="main-header-logo">
+                <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Сидона">
+            </a>
+            <nav class="main-navigation">
+                <div class="main-navigation-wrapper">
+                    <ul class="site-navigation">
+                        <!-- Основное меню -->
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li><a href="#">Карта штата</a></li>
+                        <li><a href="catalog.html">Гостиницы</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section>
-            <p>Welcome</p>
-            <p>to the gorgeous</p>
-            <h1>Седона</h1>
-            <p>"Because the Grand Canyon sucks"</p>
-            <img src="img/welcome.jpg" width="1200" height="509" alt="скалы">
+            <div class="hidden-text">
+                <p>Welcome</p>
+                <p>to the gorgeous</p>
+                <h1>Седона</h1>
+                <p>"Because the Grand Canyon sucks"</p>
+            </div>
+            <img class="picture" src="img/welcome.jpg" width="1200" height="509" alt="скалы">
         </section>
         <section>
-            <div class="welcome">
-                <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+            <div class="desc">
+                <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-                <img src="https://via.placeholder.com/1200x216" alt="Rectangle">
             </div>
         </section>
-        <section>
-            <div>
+        <section class="container">
+            <div class="text-pic">
                 <h2>Настоящий городок</h2>
                 <p>№1</p>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img src="https://via.placeholder.com/400x256" alt="Rectangle Color #81B3D2">
-                <img src="img/image2.png" width="800" height="256" alt="городок Седона">
+                <p>Седона — не аттракцион для туристов, там<br> течёт своя жизнь</p>
+            </div>
+            <img src="img/image2.png" width="800" height="256" alt="городок Седона">
+        </section>
+        <section class="features">
+            <div class="container">
+                <div class="feature-item">
+                    <img src="img/icon-1.svg" width="49" height="65" alt="домик">
+                    <h3>Жильё</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/icon-3.svg" width="72" height="70" alt="бургер">
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                </div>
+                <div class="feature-item">
+                    <img src="img/icon-2.svg" width="64" height="77" alt="сувенир">
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного<br> производства!</p>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <img src="img/icon-1.svg" width="49" height="65" alt="домик">
-                <h3>Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </div>
-            <div>
-                <img src="img/icon-3.svg" width="72" height="70" alt="бургер">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div>
-                <img src="img/icon-2.svg" width="64" height="77" alt="сувенир">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="img/image3.jpg" width="800" height="256" alt="мост Дьявола">
-                <img src="https://via.placeholder.com/400x256" alt="Rectangle Color #81B3D2">
+        <section class="container">
+            <img src="img/image3.jpg" width="800" height="256" alt="мост Дьявола">
+            <div class="text-pic">
                 <h2>Там есть Мост дьявола</h2>
                 <p>№2</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                <h3>Небольшая площадь</h3>
-                <p>№3</p>
-                <p>Все достопримечательности находятся очень близко</p>
-                <h3>Красивая дорога</h3>
-                <p>№4</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                <h3>Мало туристов</h3>
-                <p>№5</p>
-                <p>Большинство едет в Гранд каньон и толпится там</p>
+                <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <div class="feature-item">
+                    <h3>Небольшая площадь</h3>
+                    <p>№3</p>
+                    <p>Все достопримечательности<br> находятся очень близко</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Красивая дорога</h3>
+                    <p>№4</p>
+                    <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Мало туристов</h3>
+                    <p>№5</p>
+                    <p>Большинство едет в Гранд каньон<br> и толпится там</p>
+                </div>
             </div>
         </section>
         <section>
@@ -97,43 +112,45 @@
     </main>
     <footer>
         <img src="https://via.placeholder.com/1200x120" alt="rectangle">
-        <div>
-            <p>#visitSEDONA</p>
-            <p>+7 800 555-86-28</p>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <div>
-                        <a href="#">
-                            <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="#">
-                            <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="#">
-                            <img src="img/youtube_logo.svg" width="20" height="16" alt="иконка youtube">
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <p>WEBSITE BY
-                            <a href="https://htmlacademy.ru/intensive/htmlcss">
-                                <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
+        <div class="container">
+            <div class="feature-item">
+                <p>#visitSEDONA</p>
+                <p>+7 800 555-86-28</p>
+            </div>
+            <div>
+                <ul class="features-list">
+                    <li>
+                        <div class="feature-item">
+                            <a href="#">
+                                <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
                             </a>
-                        </p>
-                    </div>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-item">
+                            <a href="#">
+                                <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-item">
+                            <a href="#">
+                                <img src="img/youtube_logo.svg " width="20" height="16" alt="иконка youtube">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-item">
+                            <p>WEBSITE BY
+                                <a href="https://htmlacademy.ru/intensive/htmlcss ">
+                                    <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

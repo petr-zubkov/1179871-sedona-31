@@ -1,0 +1,151 @@
+:root {
+    --basic-black: #000000;
+    --basic-dark: #333333;
+    --sea-green: #81B3D2;
+    --light-brown: #766357;
+    --light-brown2: #766458;
+    --basic-neutral: #666666;
+    --basic-white: #ffffff;
+    --special: #6A6A6A;
+}
+
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    /* background-image: url("img/bg.jpg");*/
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.main-header-logo {
+    text-align: center;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.picture {
+    text-align: center;
+}
+
+.desc {
+    width: 1200px;
+    height: 216px;
+    padding-top: 42px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.text-pic {
+    width: 400px;
+    height: 256px;
+    padding-top: 47px;
+    text-align: center;
+    background-color: var(--sea-green);
+    color: var(--basic-white);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+.main-navigation-wrapper {
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.order-1 {
+    order: -1;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-white);
+}
+
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: var(--basic-dark);
+}
+
+
+/* Features */
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 82px;
+    vertical-align: bottom;
+}
+
+.feature-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
