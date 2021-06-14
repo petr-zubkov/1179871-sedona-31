@@ -7,18 +7,18 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <title>Седона — небольшой городок в Аризоне,заслуживающий большего!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic;display=swap">
     <link href="normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="shadow">
     <main>
         <header class="main-header">
-            <a class="main-header-logo">
-                <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Сидона">
-            </a>
             <nav class="main-navigation">
+                <a class="main-header-logo">
+                    <img src="img/logo.svg" width="138" height="70" alt="Логотип городка Сидона">
+                </a>
                 <div class="main-navigation-wrapper">
                     <ul class="site-navigation">
                         <!-- Основное меню -->
@@ -30,7 +30,7 @@
                 </div>
             </nav>
         </header>
-        <section>
+        <section class="container">
             <div class="hidden-text">
                 <p>Welcome</p>
                 <p>to the gorgeous</p>
@@ -39,7 +39,7 @@
             </div>
             <img class="picture" src="img/welcome.jpg" width="1200" height="509" alt="скалы">
         </section>
-        <section>
+        <section class="container">
             <div class="desc">
                 <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -53,6 +53,7 @@
             </div>
             <img src="img/image2.png" width="800" height="256" alt="городок Седона">
         </section>
+        <!-- Features -->
         <section class="features">
             <div class="container">
                 <div class="feature-item">
@@ -80,7 +81,8 @@
                 <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
             </div>
         </section>
-        <section class="features">
+        <!-- Landmark -->
+        <section class="landmark">
             <div class="container">
                 <div class="feature-item">
                     <h3>Небольшая площадь</h3>
@@ -99,59 +101,68 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <img src="https://via.placeholder.com/568x86" alt="Rectangle Color #766357">
-            <form action="https://echo.htmlacademy.ru/courses" method="post" class="search">
-                <input type="search" name="q" placeholder="Поиск по сайту" class="input">
-                <input type="submit" value="Найти" name="btn">
-            </form>
-            <img src="img/map.jpg" width="1199" height="474" alt="Карта">
+        <!-- Offers -->
+        <section class="container">
+            <div class="offers">
+                <h2>Заинтересовались?</h2>
+                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                <div class="input-data">
+                    <form action="#">
+                        <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
+                        <label for="date-init-label">
+                            Дата заезда 
+                            <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
+                        </label>
+                        <img src="img/calendar.svg" width="21" height="22" alt="календарь">
+                        <br>
+                        <label for="date-end-label">
+                            Дата выезда 
+                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
+                        </label>
+                        <img src="img/calendar.svg" width="21" height="22" alt="календарь">
+                        <br>
+                        <label for="id-number-man">Взрослые:
+                            <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
+                        </label>
+                        <label for="id-number-child">Дети:
+                            <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
+                        </label><br>
+                        <button type="submit" class="btn">Отправить</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                    </form>
+                </div>
+                <img src="img/map.jpg" width="1199" height="474" alt="Карта">
+            </div>
         </section>
     </main>
-    <footer>
-        <img src="https://via.placeholder.com/1200x120" alt="rectangle">
-        <div class="container">
-            <div class="feature-item">
-                <p>#visitSEDONA</p>
-                <p>+7 800 555-86-28</p>
-            </div>
-            <div>
-                <ul class="features-list">
-                    <li>
-                        <div class="feature-item">
-                            <a href="#">
-                                <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-item">
-                            <a href="#">
-                                <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-item">
-                            <a href="#">
-                                <img src="img/youtube_logo.svg " width="20" height="16" alt="иконка youtube">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-item">
-                            <p>WEBSITE BY
-                                <a href="https://htmlacademy.ru/intensive/htmlcss ">
-                                    <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
-                                </a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <!-- Main footer -->
+    <footer class="container main-footer">
+        <div class="footer-contacts">
+            <p>#visitSEDONA</p>
+            <p>+7 800 555-86-28</p>
         </div>
+        <ul class="footer-social">
+            <li class="social-button">
+                <a href="#">
+                    <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
+                </a>
+            </li>
+            <li class="social-button">
+                <a href="#">
+                    <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
+                </a>
+            </li>
+            <li class="social-button">
+                <a href="#">
+                    <img src="img/youtube_logo.svg" width="20" height="16" alt="иконка youtube">
+                </a>
+            </li>
+        </ul>
+        <p class="footer-copyright">WEBSITE BY
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
+            </a>
+        </p>
     </footer>
 </body>
 

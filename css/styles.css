@@ -2,10 +2,14 @@
     --basic-black: #000000;
     --basic-dark: #333333;
     --sea-green: #81B3D2;
+    --sea-green-hover: #669EC0;
+    --sea-green-pressing: #5496BD;
     --light-brown: #766357;
     --light-brown2: #766458;
     --basic-neutral: #666666;
+    --light-yellow: #EEEEEE;
     --basic-white: #ffffff;
+    --shadow: #FFFFFF;
     --special: #6A6A6A;
 }
 
@@ -13,7 +17,7 @@
 /* Global */
 
 body {
-    min-width: 960px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -26,6 +30,19 @@ body {
     /* background-image: url("img/bg.jpg");*/
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+.shadow {
+    box-sizing: border-box;
+    position: absolute;
+    background-position: 50%;
+    width: 1200px;
+    height: 2762px;
+    text-align: center;
+    margin: 0 auto;
+    top: 0px;
+    background: var(--shadow);
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -45,55 +62,24 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
+    padding-left: 72px;
+    padding-right: 72;
 }
 
 .main-header-logo {
     text-align: center;
 }
 
-.hidden-text {
-    display: none;
-}
-
-.picture {
-    text-align: center;
-}
-
-.desc {
-    width: 1200px;
-    height: 216px;
-    padding-top: 42px;
-    text-align: center;
-    line-height: 26px;
-}
-
-.text-pic {
-    width: 400px;
-    height: 256px;
-    padding-top: 47px;
-    text-align: center;
-    background-color: var(--sea-green);
-    color: var(--basic-white);
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
 
 /* Main navigation */
 
 .main-navigation {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
     background-color: transparent;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .main-navigation-wrapper {
@@ -105,11 +91,10 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
-}
-
-.order-1 {
-    order: -1;
+    width: 1056px;
+    max-height: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -131,16 +116,61 @@ img {
     background-color: var(--basic-dark);
 }
 
+.hidden-text {
+    display: none;
+}
+
+.picture {
+    text-align: center;
+}
+
+.desc {
+    width: 1200px;
+    height: 174px;
+    padding-top: 42px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.text-pic {
+    display: inline-block;
+    width: 400px;
+    height: 209px;
+    padding-top: 47px;
+    text-align: center;
+    background-color: var(--sea-green);
+    color: var(--basic-white);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 
 /* Features */
+
+.features {
+    width: 1200px;
+    height: 330px;
+}
 
 .features-list {
     list-style: none;
 }
 
 .feature-item {
+    display: inline-block;
+    box-sizing: border-box;
     text-align: center;
     font-weight: 400;
+    padding-top: 64px;
     padding-bottom: 82px;
     vertical-align: bottom;
 }
@@ -148,4 +178,153 @@ img {
 .feature-item h3 {
     font-size: 21px;
     line-height: 21px;
+}
+
+
+/* Landmark */
+
+.landmark {
+    height: 256px;
+    background-color: var(--light-yellow);
+}
+
+
+/* Offers */
+
+.offers {
+    width: 1200px;
+    height: 291px;
+    text-align: center;
+    padding-top: 58px;
+}
+
+.offers h1 {
+    width: 435px;
+    height: 56px;
+    padding-top: 30px;
+    background-color: var(--light-brown);
+    text-align: center;
+    font-size: 21px;
+    color: var(--basic-white);
+    line-height: 26px;
+}
+
+.offers p {
+    width: 435px;
+    height: 95px;
+    margin-left: 383px;
+    margin-right: 382px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.offers-search {
+    width: 435px;
+    height: 56px;
+    margin-left: 316px;
+    padding-top: 30px;
+    background-color: var(--light-brown);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-popup {
+    /*display: none;*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    right: 14px;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 42px;
+}
+
+.input-data h1 {
+    width: 435px;
+    height: 56px;
+    padding-top: 30px;
+    background-color: var(--light-brown);
+    text-align: center;
+    font-size: 21px;
+    color: var(--basic-white);
+    line-height: 26px;
+}
+
+.input-data p {
+    width: 435px;
+    height: 95px;
+    margin-left: 383px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+
+/* Main footer */
+
+.main-footer {
+    margin-top: 474px;
+    height: 120px;
+}
+
+.footer-contacts a {
+    color: var(--basic-dark);
+    text-decoration: underline;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.footer-social h2 {
+    font-size: 14px;
+}
+
+
+/* Social button */
+
+.social-button {
+    width: 46px;
+    height: 34px;
+    color: inherit;
+    background-color: var(--sea-green);
+    text-align: center;
+    padding-top: 14px;
+    margin-right: 6px;
+}
+
+.social-button:hover {
+    background-color: var(--sea-green-hover);
+}
+
+.social-button:focus {
+    background-color: var(--sea-green-pressing);
+}
+
+.footer-copyright {
+    text-align: center;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
 }
