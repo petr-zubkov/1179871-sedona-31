@@ -12,8 +12,8 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body class="shadow">
-    <main>
+<body>
+    <main class="shadow">
         <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo">
@@ -84,17 +84,17 @@
         <!-- Landmark -->
         <section class="landmark">
             <div class="container">
-                <div class="feature-item">
+                <div class="landmark-item">
                     <h3>Небольшая площадь</h3>
                     <p>№3</p>
                     <p>Все достопримечательности<br> находятся очень близко</p>
                 </div>
-                <div class="feature-item">
+                <div class="landmark-item">
                     <h3>Красивая дорога</h3>
                     <p>№4</p>
                     <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
                 </div>
-                <div class="feature-item">
+                <div class="landmark-item">
                     <h3>Мало туристов</h3>
                     <p>№5</p>
                     <p>Большинство едет в Гранд каньон<br> и толпится там</p>
@@ -106,63 +106,73 @@
             <div class="offers">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <div class="input-data">
-                    <form action="#">
-                        <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
-                        <label for="date-init-label">
-                            Дата заезда 
-                            <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
-                        </label>
-                        <img src="img/calendar.svg" width="21" height="22" alt="календарь">
-                        <br>
-                        <label for="date-end-label">
-                            Дата выезда 
-                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
-                        </label>
-                        <img src="img/calendar.svg" width="21" height="22" alt="календарь">
-                        <br>
-                        <label for="id-number-man">Взрослые:
-                            <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
-                        </label>
-                        <label for="id-number-child">Дети:
-                            <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
-                        </label><br>
-                        <button type="submit" class="btn">Отправить</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
-                    </form>
-                </div>
-                <img src="img/map.jpg" width="1199" height="474" alt="Карта">
             </div>
         </section>
+        <section>
+            <div class="input-data">
+                <form action="#">
+                    <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
+                    <div>
+                        <p>
+                            <label for="date-init-label">
+                                Дата заезда
+                                <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
+                                <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
+                            </label>
+                            <br>
+                            <label for="date-end-label">
+                            Дата выезда 
+                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
+                            </label>
+                            <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
+                            <br>
+                            <label for="id-number-man">Взрослые:
+                            <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
+                            </label>
+                            <label for="id-number-child">Дети:
+                            <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
+                            </label><br>
+                        </p>
+                    </div>
+                    <button type="submit" class="button-find" name="find-button">Найти</button>
+                    <!--<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
+                </form>
+            </div>
+        </section>
+        <img src="img/map.jpg" width="1199" height="474" alt="Карта" class="map">
     </main>
     <!-- Main footer -->
-    <footer class="container main-footer">
-        <div class="footer-contacts">
-            <p>#visitSEDONA</p>
-            <p>+7 800 555-86-28</p>
+    <footer class="main-footer">
+        <div class="container">
+            <div>
+                <p class="footer-contacts a">
+                    <a href="#">#visitSEDONA</a>
+                    <a href="#">+7 800 555-86-28</a>
+                </p>
+            </div>
+            <ul class="footer-social">
+                <li class="social-button a">
+                    <a href="#">
+                        <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
+                    </a>
+                </li>
+                <li class="social-button">
+                    <a href="#">
+                        <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
+                    </a>
+                </li>
+                <li class="social-button">
+                    <a href="#">
+                        <img src="img/youtube_logo.svg" width="20" height="16" alt="иконка youtube">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-copyright">WEBSITE BY
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
+                </a>
+            </p>
         </div>
-        <ul class="footer-social">
-            <li class="social-button">
-                <a href="#">
-                    <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
-                </a>
-            </li>
-            <li class="social-button">
-                <a href="#">
-                    <img src="img/fb_icon.svg" width="12" height="22" alt="иконка Facebook">
-                </a>
-            </li>
-            <li class="social-button">
-                <a href="#">
-                    <img src="img/youtube_logo.svg" width="20" height="16" alt="иконка youtube">
-                </a>
-            </li>
-        </ul>
-        <p class="footer-copyright">WEBSITE BY
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo_html.svg" width="104" height="36" alt="лого HTML-academy">
-            </a>
-        </p>
     </footer>
 </body>
 
