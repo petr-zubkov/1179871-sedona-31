@@ -57,17 +57,17 @@
         <section class="features">
             <div class="container">
                 <div class="feature-item">
-                    <img src="img/icon-1.svg" width="49" height="65" alt="домик">
+                    <img src="img/icon-1.svg" width="79" height="76" alt="домик">
                     <h3>Жильё</h3>
                     <p>Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
                 </div>
                 <div class="feature-item">
-                    <img src="img/icon-3.svg" width="72" height="70" alt="бургер">
+                    <img src="img/icon-3.svg" width="81" height="76" alt="бургер">
                     <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </div>
                 <div class="feature-item">
-                    <img src="img/icon-2.svg" width="64" height="77" alt="сувенир">
+                    <img src="img/icon-2.svg" width="64" height="76" alt="сувенир">
                     <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного<br> производства!</p>
                 </div>
@@ -112,30 +112,29 @@
             <div class="input-data">
                 <form action="#">
                     <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
-                    <div>
-                        <p>
-                            <label for="date-init-label">
-                                Дата заезда
-                                <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
-                                <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
-                            </label>
-                            <br>
-                            <label for="date-end-label">
-                            Дата выезда 
-                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
-                            </label>
+                    <div class="windows-input">
+
+                        <div class="box">
+                            <label for="date-init-label" class="string-input">Дата заезда:</label>
+                            <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
                             <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
-                            <br>
-                            <label for="id-number-man">Взрослые:
+                        </div>
+
+                        <div class="box">
+                            <label for="date-end-label" class="string-input">Дата выезда</label>
+                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
+                            <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
+                        </div>
+                        <div class="box2">
+                            <label for="id-number-man" class="string-input">Взрослые:</label>
                             <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
-                            </label>
-                            <label for="id-number-child">Дети:
+
+                            <label for="id-number-child" class="string-input">Дети:</label>
                             <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
-                            </label><br>
-                        </p>
+                        </div>
+                        <button type="submit" class="button-find" name="find-button">Найти</button>
+                        <!--<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
                     </div>
-                    <button type="submit" class="button-find" name="find-button">Найти</button>
-                    <!--<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
                 </form>
             </div>
         </section>

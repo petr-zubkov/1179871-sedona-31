@@ -39,7 +39,7 @@ body {
     /*position: absolute;*/
     /*background-position: 50%;*/
     width: 1200px;
-    height: 2762px;
+    height: 2807px;
     text-align: center;
     margin: 0 auto;
     /*top: 0px;*/
@@ -91,7 +91,6 @@ img {
 
 .main-header-logo {
     text-align: center;
-    /*временно*/
     margin-top: -26px;
     /* grid */
     order: 1;
@@ -200,7 +199,18 @@ img {
 .container {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.inner-page .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: nowrap;
     max-width: 1200px;
@@ -310,6 +320,7 @@ img {
 
 .landmark-item {
     width: 302px;
+    height: 155px;
     font-size: 14px;
     line-height: 21px;
     padding-left: 25px;
@@ -325,9 +336,9 @@ img {
 
 .offers {
     width: 1200px;
-    /*height: 147px;*/
-    /*text-align: center;*/
-    padding-top: 58px;
+    height: 150px;
+    text-align: center;
+    padding-top: 56px;
     /*-----------------*/
     outline: 5px solid rgba(0, 255, 0, 0.7);
     outline-offset: -5px;
@@ -336,7 +347,7 @@ img {
 .offers h1 {
     width: 568px;
     height: 56px;
-    padding-top: 24px;
+    padding-top: 30px;
     background-color: var(--light-brown);
     text-align: center;
     font-size: 21px;
@@ -369,6 +380,81 @@ img {
     /*bottom: 0;*/
 }
 
+.windows-input {
+    width: 458px;
+    height: 285px;
+    z-index: 2;
+    padding: 20px 55px 55px 55px;
+}
+
+.string-input {
+    /*display: inline-flex;*/
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    text-aline: left;
+    vertical-align: middle;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 140px 140px 140px 30px;
+    row-gap: 29px;
+    column-gap: 10;
+    min-height: 70px;
+    vertical-align: middle;
+    text-align: left;
+    align-content: center;
+    /* grid */
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+}
+
+.box label {
+    display: inline;
+    height: 30px;
+    vertical-align: middle;
+    grid-column: 1 / 2;
+    align-content: center;
+}
+
+.box input {
+    display: inline-flex;
+    height: 30px;
+    width: 260px;
+    grid-column: 2 / 4;
+    margin-right: 6px;
+    text-align: left;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.box a {
+    display: inline-flex;
+    vertical-align: middle;
+    height: 30px;
+    grid-column: 4 / 5;
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: 95px 110px 90px 110px;
+    row-gap: 29px;
+    column-gap: 10px;
+    height: 30px;
+    min-width: 448px;
+    vertical-align: middle;
+    text-align: left;
+    align-content: center;
+    width: 100px;
+    padding: 10px;
+    margin-top: 29px;
+    /* grid */
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+}
+
 .input-data {
     position: relative;
     z-index: 2;
@@ -380,13 +466,13 @@ img {
     text-align: center;
     width: 568px;
     height: 481px;
-    background-color: var(--basic-white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: -231px;
     font-size: 21px;
     line-height: 52px;
+    background-color: var(--basic-white);
     /* grid */
     outline: 5px solid rgba(0, 11, 55, 0.8);
     outline-offset: -5px;
@@ -404,18 +490,6 @@ img {
     line-height: 26px;
 }
 
-.input-data p {
-    padding-left: 55px;
-    padding-right: 55px;
-    text-align: left;
-    vertical-align: middle;
-    font-size: 21px;
-    line-height: 67px;
-    /* grid */
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
-}
-
 .button-find {
     width: 458px;
     height: 58px;
@@ -424,6 +498,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    margin-top: 29px;
 }
 
 .calendar {
@@ -441,9 +516,11 @@ img {
 /* Main footer */
 
 .main-footer {
-    margin-top: -75px;
-    height: 120px;
-    padding-left: 153px;
+    margin-top: -120px;
+    min-width: 1056px;
+    /*height: 120px;
+    padding: 0px auto;
+    text-align: center;*/
     /* grid */
     outline: 5px solid rgba(255, 0, 0, 0.7);
     outline-offset: -5px;
@@ -451,7 +528,6 @@ img {
 
 .footer-contacts {
     width: 180px;
-    margin-right: 204px;
     /* grid */
     outline: 5px solid rgba(0, 255, 255, 0.7);
     outline-offset: -5px;
@@ -473,6 +549,8 @@ img {
 .footer-social {
     display: flex;
     flex-direction: row;
+    min-width: 170px;
+    height: 48px;
     justify-content: space-around;
     align-content: center;
     text-align: center;
@@ -508,7 +586,6 @@ img {
 }
 
 .footer-copyright {
-    margin-left: 190px;
     text-align: center;
     font-weight: 400;
     vertical-align: bottom;
@@ -517,10 +594,14 @@ img {
     outline-offset: -5px;
 }
 
-.footer-copyright .button:hover,
+.footer-copyright .button:hover {
+    color: var(--basic-black);
+    background-color: var(--sea-green-hover);
+}
+
 .footer-copyright .button:focus {
     color: var(--basic-black);
-    background-color: var(--basic-white);
+    background-color: var(--sea-green-hover);
 }
 
 
@@ -606,6 +687,9 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
+    /* grid */
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
 }
 
 .list-filters h3 {
@@ -648,6 +732,9 @@ img {
     align-content: top;
     /*flex-warp: warp;*/
     margin-bottom: 51px;
+    /* grid */
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;
 }
 
 .catalog-item h3 {
@@ -657,4 +744,18 @@ img {
 
 .info {
     align-content: top;
+}
+
+.info h3 {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 5px;
+    line-height: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: -5px;
+    line-height: 5px;
 }

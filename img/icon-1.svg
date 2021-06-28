@@ -1,5 +1,67 @@
-<svg width="75" height="72" viewBox="0 0 75 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M45.656 65.033H29.656V41.21H45.656V65.033ZM42.718 44.134H32.593V62.11H42.718V44.134Z" fill="#81B3D2"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M72.771 39.253L74.847 37.185L64.939 27.32V0H51.127V13.567L37.5 0L0.151993 37.185L2.22899 39.253L10.061 31.458V69.076H6.12399V72H69.999V69.076H64.94V31.458L72.771 39.253ZM62.002 69.076H12.999V28.534L37.5 4.149L62.002 28.534V69.076ZM54.064 16.492L62.002 24.394V2.924H54.064V16.492Z" fill="#81B3D2"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M37.656 34.7929C33.376 34.7929 29.906 31.3409 29.906 27.0799C29.906 22.8209 33.375 19.3669 37.656 19.3669C41.935 19.3669 45.406 22.8209 45.406 27.0799C45.406 31.3409 41.935 34.7929 37.656 34.7929ZM42.625 27.0799C42.625 24.3489 40.4 22.1349 37.656 22.1349C34.911 22.1349 32.686 24.3489 32.686 27.0799C32.686 29.8119 34.91 32.0279 37.656 32.0279C40.4 32.0279 42.625 29.8119 42.625 27.0799ZM17.061 41.2099H20.061V45.1289H17.061V41.2099ZM25.999 41.2099H22.999V45.1289H25.999V41.2099ZM17.061 47.1819H20.061V51.1009H17.061V47.1819ZM25.999 47.1819H22.999V51.1009H25.999V47.1819ZM48.998 41.2099H51.998V45.1289H48.998V41.2099ZM57.936 41.2099H54.936V45.1289H57.936V41.2099ZM48.998 47.1819H51.998V51.1009H48.998V47.1819ZM57.936 47.1819H54.936V51.1009H57.936V47.1819Z" fill="#81B3D2"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="78.849998"
+   height="76"
+   viewBox="0 0 78.849998 76"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="icon-1.svg"
+   style="fill:none"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="3.2777778"
+     inkscape:cx="0.27966102"
+     inkscape:cy="36"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 45.656,69.033004 h -16 v -23.823 h 16 z m -2.938,-20.899 H 32.593 v 17.976 h 10.125 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#81b3d2;fill-rule:evenodd" />
+  <path
+     d="M 76.65603,41.433722 78.847364,39.250833 68.388919,28.837778 V -4.8706056e-7 H 53.809586 V 14.320722 L 39.42553,-4.8706056e-7 0.00263424,39.250833 2.1950199,41.433722 10.462141,33.205667 V 72.913556 H 6.3064088 V 76 H 73.73003 V 72.913556 H 68.389975 V 33.205667 Z M 65.288753,72.913556 H 13.563364 V 30.119222 L 39.42553,4.3794995 65.288753,30.119222 Z m -8.379,-55.505334 8.379,8.341 V 3.0864439 h -8.379 z"
+     id="path4"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#81b3d2;fill-rule:evenodd;stroke-width:1.05555558" />
+  <path
+     d="m 37.656,38.792904 c -4.28,0 -7.75,-3.452 -7.75,-7.713 0,-4.259 3.469,-7.713 7.75,-7.713 4.279,0 7.75,3.454 7.75,7.713 0,4.261 -3.471,7.713 -7.75,7.713 z m 4.969,-7.713 c 0,-2.731 -2.225,-4.945 -4.969,-4.945 -2.745,0 -4.97,2.214 -4.97,4.945 0,2.732 2.224,4.948 4.97,4.948 2.744,0 4.969,-2.216 4.969,-4.948 z m -25.564,14.13 h 3 v 3.919 h -3 z m 8.938,0 h -3 v 3.919 h 3 z m -8.938,5.972 h 3 v 3.919 h -3 z m 8.938,0 h -3 v 3.919 h 3 z m 22.999,-5.972 h 3 v 3.919 h -3 z m 8.938,0 h -3 v 3.919 h 3 z m -8.938,5.972 h 3 v 3.919 h -3 z m 8.938,0 h -3 v 3.919 h 3 z"
+     id="path6"
+     inkscape:connector-curvature="0"
+     style="clip-rule:evenodd;fill:#81b3d2;fill-rule:evenodd" />
 </svg>
