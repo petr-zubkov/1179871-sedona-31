@@ -11,15 +11,16 @@
     --brown-focus: #503E33;
     --basic-neutral: #666666;
     --light-yellow: #EEEEEE;
+    --basic-extra-light: #f8f5f2;
     --basic-white: #ffffff;
     --shadow: #FFFFFF;
-    --special: #6A6A6A;
+    --special: #CACACA;
 }
 
 
 /* Global */
 
-body {
+page-body {
     min-width: 1200px;
     margin: 0;
     padding: 0;
@@ -139,6 +140,9 @@ img {
     justify-content: space-between;
     width: 1056px;
     max-height: 56px;
+    /*--------------------------*/
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -205,6 +209,9 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
+    /*-------------------*/
+    outline: 5px solid rgba(0, 25, 250, 0.2);
+    outline-offset: -5px;
 }
 
 .inner-page .container {
@@ -518,16 +525,20 @@ img {
 .main-footer {
     margin-top: -120px;
     min-width: 1056px;
-    /*height: 120px;
-    padding: 0px auto;
-    text-align: center;*/
+    height: 120px;
+    padding: 20px auto;
+    text-align: center;
     /* grid */
     outline: 5px solid rgba(255, 0, 0, 0.7);
     outline-offset: -5px;
 }
 
 .footer-contacts {
-    width: 180px;
+    margin-top: 15px;
+    width: 240px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
     /* grid */
     outline: 5px solid rgba(0, 255, 255, 0.7);
     outline-offset: -5px;
@@ -549,10 +560,12 @@ img {
 .footer-social {
     display: flex;
     flex-direction: row;
-    min-width: 170px;
-    height: 48px;
-    justify-content: space-around;
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    /*justify-content: space-around;*/
     align-content: center;
+    vertical-align: middle;
     text-align: center;
     list-style: none;
     /* grid */
@@ -574,7 +587,9 @@ img {
     background-color: var(--sea-green);
     text-align: center;
     padding-top: 14px;
-    margin-right: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    /*margin-right: 6px;*/
 }
 
 .social-button:hover {
@@ -586,26 +601,40 @@ img {
 }
 
 .footer-copyright {
-    text-align: center;
-    font-weight: 400;
+    margin-top: 30px;
+    width: 240px;
+    height: 60px;
     vertical-align: bottom;
     /* grid */
     outline: 5px solid rgba(0, 255, 0, 0.7);
     outline-offset: -5px;
 }
 
-.footer-copyright .button:hover {
+.copyright {
+    text-align: center;
+    font-weight: 400;
+    width: 240px;
+    height: 60px;
+    vertical-align: bottom;
+}
+
+.copyright .button:hover {
     color: var(--basic-black);
     background-color: var(--sea-green-hover);
 }
 
-.footer-copyright .button:focus {
+.copyright .button:focus {
     color: var(--basic-black);
     background-color: var(--sea-green-hover);
 }
 
 
 /* catalog.html */
+
+.filter-hotels {
+    width: 1200px;
+    height: 258px;
+}
 
 .stars {
     /* звездочки*/
@@ -682,24 +711,34 @@ img {
     display: flex;
     flex-direction: row;
     list-style: none;
-    align-content: left;
+    text-align: left;
+    /*align-content: left;*/
     flex-wrap: nowrap;
+    height: 86px;
+    padding-bottom: 20px;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px;
+    line-height: 26px;
     /* grid */
     outline: 5px solid rgba(255, 0, 0, 0.7);
     outline-offset: -5px;
 }
 
 .list-filters h3 {
+    margin-top: 15px;
+    height: 86px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 145px;
     margin-left: 73px;
-    margin-right: 46px;
-    color: var(--basic-black);
+    text-align: left;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 86px;
+    --special color: var(--special);
 }
 
 .list-filters h3:hover {
-    color: var(--sea-green-hover);
+    color: var(--basic-black);
 }
 
 .list-filters h3:focus {
@@ -707,22 +746,68 @@ img {
 }
 
 .list-filters p {
-    margin-right: 40px;
-    color: var(--basic-black);
+    display: inline-block;
+    vertical-align: middle;
+    height: 86px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 86px;
+    color: var(--special);
 }
 
 .list-filters p:hover {
-    color: var(--sea-green-hover);
+    color: var(--basic-black);
 }
 
 .list-filters p:focus {
     color: var(--sea-green-pressing);
 }
 
+.discovered p {}
+
+.sorted-item p {
+    margin-left: 46px;
+}
+
+.by-price p {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.by-type p {
+    text-align: left;
+    margin-left: 32px;
+}
+
+.by-rating p {
+    text-align: left;
+    margin-left: 33px;
+}
+
+.sorted-down p {
+    text-align: left;
+    margin-left: 500px;
+    color: var(--special);
+}
+
+.sorted-down p:hover {
+    color: var(--basic-black);
+}
+
+.sorted-up p {
+    margin-left: 12px;
+    color: var(--special);
+}
+
+.sorted-up p:hover {
+    color: var(--basic-black);
+}
+
 .catalog-list {
     list-style: none;
     /*display: flex;
-    flex-direction: row;*/
+    flex-direction: column;*/
 }
 
 .catalog-item {
@@ -731,6 +816,7 @@ img {
     max-height: 90px;
     align-content: top;
     /*flex-warp: warp;*/
+    margin-left: 73px;
     margin-bottom: 51px;
     /* grid */
     outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -738,6 +824,7 @@ img {
 }
 
 .catalog-item h3 {
+    text-align: left;
     margin-left: 29px;
     text-align: left;
 }
@@ -747,6 +834,7 @@ img {
 }
 
 .info h3 {
+    text-align: left;
     display: flex;
     flex-direction: column;
     margin-block-start: 5px;
