@@ -34,7 +34,7 @@
                 <img class="picture" src="img/background.png" width="1200" height="217" alt="фон">
             </div>
             <div class="container">
-                <form action="https://echo.htmlacademy.ru/" method="post" class="filter-box">
+                <form action="https://echo.htmlacademy.ru/" method="get" class="filter-box">
                     <div class="inner-container">
                         <h4>Инфраструктура:</h4>
                         <label for="id-pool">
@@ -60,11 +60,33 @@
                         Апартаменты</label>
                     </div>
                     <div class="inner-container">
-                        <label for="id-price">Стоимость в сутки, &#8381;:<br>
-                        <span>от 0</span>
-                        <span>До 3000</span><br>
-                        <input type="range" id="id-price" name="price" min="0" max="3000"><br>
-                        </label><br>
+                        <!------------ползунки--------------------->
+                        <fieldset class="filter-item">
+                            <legend>Стоимость в сутки, &#8381;:</legend>
+                            <div class="range-filter">
+                                <div class="price-controls">
+                                    <label class="min-price">
+                                        от <input type="number" name="min-price" value="0">
+                                    </label>
+                                    <label class="max-price">
+                                        до <input type="number" name="max-price" value="3000">
+                                    </label>
+                                </div>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="
+                                            width: 30%;
+                                            margin-left: 20%">
+                                        </div>
+                                    </div>
+                                    <div class="toggle toggle-min" tabindex="0" style="left: 10%">
+                                    </div>
+                                    <div class="toggle toggle-max" tabindex="0" style="left: 70%">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!---------------------------------------------------->
                         <button type="submit">Показать</button>
                     </div>
                 </form>

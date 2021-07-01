@@ -15,12 +15,21 @@
     --basic-white: #ffffff;
     --shadow: #FFFFFF;
     --special: #CACACA;
+    /*-------ползунок---------------*/
+    --color-range-controls: #f1f1f1;
+    --background-scale: #d7dcde;
+    --background-bar: #00ca74;
+    --toggle-border: #ffffff;
+    --toggle-background-color: #ababab;
+    --toggle-box-shadow: #cfcfcf;
+    --price-controls-color: #283136;
+    --price-controls-background: #f1f1f1;
 }
 
 
 /* Global */
 
-page-body {
+.page-body {
     min-width: 1200px;
     margin: 0;
     padding: 0;
@@ -630,6 +639,100 @@ img {
 
 
 /* catalog.html */
+
+
+/* ползунки*/
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 260px;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 11px;
+}
+
+.filter-item legend {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-right: 39px;
+    padding-left: 20px;
+    /*background-color: var(--color-range-controls);*/
+    /*border-radius: 5px;*/
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: var(--background-scale);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--toggle-border);
+    background-color: var(--toggle-background-color);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--toggle-box-shadow);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 5px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    display: flex;
+    width: 317px;
+    justify-content: space-between;
+}
+
+.price-controls label {
+    text-transform: uppercase;
+    /*font-family: "Roboto", "Arial", sans-serif;*/
+    font-size: 14px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: var(--price-controls-color);
+    border: none;
+    /*border-radius: 5px;*/
+    background: var(--price-controls-background);
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+/*---------------------*/
 
 .filter-hotels {
     width: 1200px;
