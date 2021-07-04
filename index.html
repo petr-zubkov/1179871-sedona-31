@@ -22,10 +22,10 @@
                 <div class="main-navigation-wrapper">
                     <ul class="site-navigation">
                         <!-- Основное меню -->
-                        <li><a href="#">Информация</a></li>
-                        <li><a href="#">Фото и видео</a></li>
-                        <li><a href="#">Карта штата</a></li>
-                        <li><a href="catalog.html">Гостиницы</a></li>
+                        <li class="left-side"><a href="#">Информация</a></li>
+                        <li class="left-side"><a href="#">Фото и видео</a></li>
+                        <li class="right-side"><a href="#">Карта штата</a></li>
+                        <li class="right-side"><a href="catalog.html">Гостиницы</a></li>
                     </ul>
                 </div>
             </nav>
@@ -109,40 +109,40 @@
             </div>
         </section>
         <section>
-            <div class="input-data">
-                <form action="#">
-                    <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
-                    <div class="windows-input">
-
-                        <div class="box">
-                            <label for="date-init-label" class="string-input">Дата заезда:</label>
-                            <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
-                            <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
-                        </div>
-
-                        <div class="box">
-                            <label for="date-end-label" class="string-input">Дата выезда</label>
-                            <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
-                            <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
-                        </div>
-                        <div class="box2">
-                            <label for="id-number-man" class="string-input">Взрослые:</label>
-                            <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
-
-                            <label for="id-number-child" class="string-input">Дети:</label>
-                            <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
-                        </div>
-                        <button type="submit" class="button-find" name="find-button">Найти</button>
-                        <!--<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
-                    </div>
-                </form>
+            <div class="container input-data">
+                <h1>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
             </div>
+            <form action="#">
+                <div class="form-popup">
+                    <div class="box">
+                        <label for="date-init-label" class="string-input">Дата заезда:</label>
+                        <input type="text" id="date-init-label" placeholder="24 апреля 2017" name="date-init" required>
+                        <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
+                    </div>
+
+                    <div class="box">
+                        <label for="date-end-label" class="string-input">Дата выезда</label>
+                        <input type="text" id="date-end-label" placeholder="4 июля 2017" name="date-end" required>
+                        <a href="#"><img src="img/calendar.svg" width="21" height="22" alt="календарь"></a>
+                    </div>
+                    <div class="box2">
+                        <label for="id-number-man" class="string-input">Взрослые:</label>
+                        <input type="number" step="1" id="id-number-man" name="number-man" min="0" max="10">
+
+                        <label for="id-number-child" class="string-input">Дети:</label>
+                        <input type="number" step="1" id="id-number-child" name="number-child" min="0" max="10">
+                    </div>
+                    <button type="submit" class="button-find" name="find-button">Найти</button>
+                    <!--<button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>-->
+                </div>
+            </form>
+
         </section>
         <img src="img/map.jpg" width="1199" height="474" alt="Карта" class="map">
     </main>
     <!-- Main footer -->
-    <footer class="page-footer main-footer">
-        <div class="container">
+    <div class="container">
+        <footer class="page-footer main-footer">
             <div class="footer-contacts a">
                 <p><a href="#">#visitSEDONA</a></p>
                 <p><a href="#">+7 800 555-86-28</a></p>
@@ -171,8 +171,8 @@
                     </a>
                 </p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
