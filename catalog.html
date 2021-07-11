@@ -37,12 +37,14 @@
                 <form action="https://echo.htmlacademy.ru/" method="get" class="filter-box">
                     <div class="inner-container checkbox-position">
                         <h4>Инфраструктура:</h4>
-                        <label for="id-pool">
+                        <label for="id-pool" name="id-pool_lbl">
                             <input type="checkbox" id="id-pool" value="value-pool" checked>
                         Бассейн</label>
-                        <label for="id-park">
-                            <input type="checkbox" id="id-park" value="value-parking">
+                        <!--  -----------  -->
+                        <label for="id-park" name="id-park_lbl">
+                            <input type="checkbox" id="id-park" value="value-parking" checked>
                         Парковка</label>
+                        <!--  -----------  -->
                         <label for="id-wifi">
                             <input type="checkbox" id="id-wifi" value="value-wifi">
                         Wi-Fi</label>
@@ -63,13 +65,15 @@
                         <!--  ползунки  -->
                         <fieldset class="filter-item">
                             <legend>
-                                <h4>Стоимость в сутки, <span>&#8381;:</span></h4>
+                                <h4>Стоимость в сутки, <span class="rub"></span></h4>
                             </legend>
                             <div class="range-filter">
                                 <div class="price-controls">
                                     <label class="min-price">
                                         от <input type="text" name="min-price" value="0" class="input-min">
                                     </label>
+                                    <div class="vertical-stripe">
+                                    </div>
                                     <label class="max-price">
                                         до <input type="text" name="max-price" value="3000" class="input-max">
                                     </label>
@@ -142,11 +146,11 @@
                         <div class="table">
                             <div class="table-row">
                                 <div class="table-cell">Гостиница</div>
-                                <div class="table-cell">от 4000 <span>&#8381;</span></div>
+                                <div class="table-cell">от 4000 <span>₽</span></div>
                             </div>
                             <div class="table-row">
-                                <div class="table-cell btn-detailed"><a href="#">Подробнее</a></div>
-                                <div class="table-cell btn-reserve"><a href="#">Забронировать</a></div>
+                                <div class="table-cell btn-detailed"><button type="button">Подробнее</button></div>
+                                <div class="table-cell btn-reserve"><button type="button">Забронировать</button></div>
                             </div>
                         </div>
                     </div>
@@ -166,8 +170,8 @@
                                 <div class="table-cell">от 3000 <span>&#8381;</span></div>
                             </div>
                             <div class="table-row">
-                                <div class="table-cell btn-detailed"><a href="#">Подробнее</a></div>
-                                <div class="table-cell btn-reserve"><a href="#">Забронировать</a></div>
+                                <div class="table-cell btn-detailed"><button type="button">Подробнее</button></div>
+                                <div class="table-cell btn-reserve"><button type="button">Забронировать</button></div>
                             </div>
                         </div>
                     </div>
@@ -187,8 +191,8 @@
                                 <div class="table-cell">от 2000 <span>&#8381;</span></div>
                             </div>
                             <div class="table-row">
-                                <div class="table-cell btn-detailed"><a href="#">Подробнее</a></div>
-                                <div class="table-cell btn-reserve"><a href="#">Забронировать</a></div>
+                                <div class="table-cell btn-detailed"><button type="button">Подробнее</button></div>
+                                <div class="table-cell btn-reserve"><button type="button">Забронировать</button></div>
                             </div>
                         </div>
                     </div>
@@ -201,8 +205,8 @@
             </ul>
         </section>
     </main>
-    <div class="container">
-        <footer class="main-footer">
+    <footer class="inner-page inner-footer">
+        <div class="container">
             <div class="footer-contacts a">
                 <p><a href="#">#visitSEDONA</a></p>
                 <p><a href="#">+7 800 555-86-28</a></p>
@@ -211,21 +215,25 @@
                 <li class="social-button a">
                     <!-- Twitter -->
                     <a href="#">
-                        <img src="img/twitter_logo.svg" width="17" height="17" alt="лого Twitter">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"/>
+                        </svg>
                     </a>
                 </li>
-                <li class="social-button a">
+                <li class="social-button">
                     <!-- Facebook -->
                     <a href="#">
                         <svg width="12" height="22" viewBox="0 0 12 22" fill="none">
-                        <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z"/>
+                            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z"/>
                         </svg>
                     </a>
                 </li>
                 <li class="social-button">
                     <!-- YouTube -->
                     <a href="# ">
-                        <img src="img/youtube_logo.svg" width="20" height="16" alt="иконка youtube">
+                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"/>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -261,8 +269,8 @@
                     </a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
