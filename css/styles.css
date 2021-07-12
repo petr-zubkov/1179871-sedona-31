@@ -15,6 +15,7 @@
     --basic-extra-light: #f8f5f2;
     --basic-white: #ffffff;
     --shadow: rgba(255, 255, 255, 0.3);
+    --deep-shadow: rgba(0, 0, 0, 0.3);
     --color-calendar: #A9A9A9;
     --color-copyright: #BDBBBC;
     --special: #CACACA;
@@ -527,6 +528,11 @@ img {
     fill: var(--sea-green);
 }
 
+.lbl-number-child {
+    margin-left: 55px;
+    margin-right: 18px;
+}
+
 .box2 {
     display: grid;
     grid-template-columns: 91px 12px 114px 12px 91px 12px 114px 12px;
@@ -635,7 +641,7 @@ img {
     border: none;
     margin-left: -32px;
     text-align: center;
-    width: 104px;
+    width: 110px;
     height: 32px;
     background: var(--yellow-light);
 }
@@ -797,17 +803,14 @@ img {
     display: flex;
     flex-direction: row;
     width: 46px;
-    height: 48px;
+    height: 46px;
+    padding-top: 2px;
     color: inherit;
     align-items: center;
-    /*padding-bottom: 10px;*/
     background-color: var(--sea-green);
     text-align: center;
     justify-content: center;
-    /*padding-top: 14px;*/
     margin: 0 3px;
-    /*margin-left: 3px;*/
-    /*margin-right: 6px;*/
 }
 
 .social-button svg {
@@ -924,9 +927,13 @@ img {
 }
 
 .checkbox-filter-price+label {
-    display: inline-flex;
-    align-items: left;
-    user-select: none;
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
 }
 
 .checkbox-filter-price+label::before {
@@ -962,6 +969,21 @@ img {
     margin-left: 0px;
 }
 
+.checkbox-pool-btn {
+    display: none;
+}
+
+.checkbox-pool-btn+label {
+    display: block;
+    background: url("../img/checkbox-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+.checkbox-pool-btn:checked+label {
+    background: url("../img/checkbox-on.svg") no-repeat scroll 0 0;
+}
+
 .checkbox-position label {
     display: inline-flex;
     margin-bottom: 15px;
@@ -977,7 +999,6 @@ img {
     height: 23px;
     margin-right: 10px;
     margin-bottom: 5px;
-    /*padding-top: 10px;*/
     justify-content: center;
     color: var(--basic-white);
     border: solid 2px var(--basic-white);
@@ -1070,9 +1091,10 @@ img {
 }
 
 .range-controls .toggle-min:hover {
-    border: 10px solid var(--toggle-border);
+    border: 8px solid var(--toggle-border);
     background-color: var(--toggle-background-color);
-    border-radius: 60%;
+    /*border-radius: 60%;*/
+    transform: scale(1.25);
 }
 
 .range-controls .toggle-max {
@@ -1080,9 +1102,10 @@ img {
 }
 
 .range-controls .toggle-max:hover {
-    border: 10px solid var(--toggle-border);
+    border: 8px solid var(--toggle-border);
     background-color: var(--toggle-background-color);
-    border-radius: 60%;
+    /*border-radius: 60%;*/
+    transform: scale(1.25);
 }
 
 .label .min-price {
@@ -1105,7 +1128,8 @@ img {
 
 .min-price .input-min {
     width: 50px;
-    padding-top: 5px;
+    height: 28px;
+    padding-top: 0px;
     margin-left: 2px;
     border: none;
     align-self: center;
@@ -1118,9 +1142,10 @@ img {
 }
 
 .max-price .input-max {
-    padding-top: 5px;
+    padding-top: 0px;
     border: none;
     width: 50px;
+    height: 28px;
     background: none;
 }
 
@@ -1157,6 +1182,7 @@ img {
     color: var(--basic-white);
     font-size: inherit;
     text-transform: uppercase;
+    border-radius: 2px;
     background: none;
 }
 
@@ -1297,15 +1323,19 @@ img {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: var(--sea-green);
+    color: var(--deep-shadow);
 }
 
 .list-filters p:hover {
+    color: var(--sea-green);
+}
+
+.list-filters p:active {
     color: var(--basic-black);
 }
 
-.list-filters p:focus {
-    color: var(--sea-green-active);
+.list-filters p:visited {
+    color: var(--sea-green);
 }
 
 .discovered {
@@ -1361,6 +1391,14 @@ img {
     color: var(--basic-black);
 }
 
+.sorted-down p:active {
+    color: var(--sea-green);
+}
+
+.sorted-down p:visited {
+    color: var(--sea-green);
+}
+
 .sorted-up p {
     margin-left: 12px;
     color: var(--special);
@@ -1368,6 +1406,14 @@ img {
 
 .sorted-up p:hover {
     color: var(--basic-black);
+}
+
+.sorted-up p:active {
+    color: var(--sea-green);
+}
+
+.sorted-up p:visited {
+    color: var(--sea-green);
 }
 
 .catalog-list {
@@ -1407,7 +1453,7 @@ img {
 }
 
 .info h3:active {
-    color: var(--shadow);
+    color: var(--deep-shadow);
 }
 
 .rating {
