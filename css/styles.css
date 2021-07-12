@@ -951,7 +951,7 @@ img {
 .checkbox-filter-price:checked+label::before {
     border: 2px solid var(--basic-white);
     background-color: none;
-    background-image: url("img/checkbox-on.svg");
+    /*background-image: url("img/checkbox-on.svg");*/
 }
 
 .checkbox-lbl-price {
@@ -965,33 +965,56 @@ img {
 
 /*---------------------*/
 
-.checkbox-position {
+.checkbox-position svg {
     margin-left: 0px;
+    fill: var(--basic-white);
 }
 
-.checkbox-pool-btn {
+.checkbox-button {
     display: none;
 }
 
-.checkbox-pool-btn+label {
+.checkbox-button svg {
     display: block;
-    background: url("../img/checkbox-off.svg") no-repeat scroll 0 0;
-    cursor: pointer;
-    padding-left: 25px;
+    fill: var(--basic-white);
 }
 
-.checkbox-pool-btn:checked+label {
+.checkbox-button+label {
+    /*display: block;*/
+    display: inline-flex;
+    background: url("../img/checkbox-off.svg") no-repeat scroll 0 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+    align-items: left;
+    justify-content: flex-start;
+    fill: var(--basic-white);
+    text-align: left;
+    background-color: none;
+    padding-left: 43px;
+}
+
+.checkbox-button+label svg {
+    fill: var(--basic-white);
+}
+
+.checkbox-button:checked+label {
     background: url("../img/checkbox-on.svg") no-repeat scroll 0 0;
 }
+
+
+/*-------------------------*/
 
 .checkbox-position label {
     display: inline-flex;
     margin-bottom: 15px;
+    height: 23px;
     align-items: left;
     justify-content: flex-start;
     text-align: left;
     background-color: none;
-    background-image: url("img/checkbox-on.svg");
+    margin-right: 43px;
+    margin-bottom: 20px;
+    /*background-image: url("img/checkbox-on.svg");*/
 }
 
 .checkbox-position input {
@@ -1007,13 +1030,13 @@ img {
 
 .checkbox-position input:checked+label {
     background-color: none;
-    background-image: url("img/checkbox-on.svg");
+    /*background-image: url("img/checkbox-on.svg");*/
     cursor: pointer;
 }
 
 .checkbox-position input:checked+label:before {
     background-color: none;
-    background-image: url("img/checkbox-on.svg");
+    /*background-image: url("img/checkbox-on.svg");*/
     content: "";
     position: absolute;
     left: 0px;
