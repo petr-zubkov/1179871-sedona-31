@@ -495,7 +495,7 @@ img {
 .box input {
     display: inline-flex;
     height: 30px;
-    width: 260px;
+    width: 310px;
     border: none;
     color: var(--basic-black);
     background: var(--yellow-light);
@@ -511,12 +511,14 @@ img {
 
 .box a {
     display: inline-flex;
+    align-content: center;
     vertical-align: middle;
     height: 30px;
     grid-column: 4 / 5;
 }
 
 .box svg {
+    padding-top: 4px;
     fill: var(--color-calendar);
 }
 
